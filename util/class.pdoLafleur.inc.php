@@ -107,6 +107,17 @@ class PdoLafleur
 		$laLigne = $res->fetch();
 		return $laLigne;
 	}
+	/**
+ * Retourne une categorie
+ * @param string $idCategorie  l'id de la catégorie dont on veut les produits
+ * @return la première catégorie
+*/
+	public function getCategorie(){
+		$req="select * from categorie;";
+		$res = PdoLafleur::$monPdo->query($req);
+		$cat = $res->fetch();
+		return $cat[0]; 
+	}
 /**
  * Retourne sous forme d'un tableau associatif tous les produits de la
  * catégorie passée en argument
