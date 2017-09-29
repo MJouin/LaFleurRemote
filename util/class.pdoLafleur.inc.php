@@ -118,7 +118,21 @@ class PdoLafleur
 		$cat = $res->fetch();
 		return $cat[0]; 
 	}
+/**
+ * Retourne sous forme d'un tableau associatif tous les produits de la
+ * catégorie passée en argument
+ * 
+ * @param string $idCategorie  l'id de la catégorie dont on veut les produits
+ * @return array $lesLignes un tableau associatif  contenant les produits de la categ passée en paramètre
+*/
 
+	public function getLesProduitsDeCategorie($idCategorie)
+	{
+	    $req="select * from produit where idCategorie = '$idCategorie'";
+		$res = PdoLafleur::$monPdo->query($req);
+		$lesLignes = $res->fetchAll();
+		return $lesLignes; 
+	}
 /**
  * Retourne les produits concernés par le tableau des idProduits passée en argument
  *
