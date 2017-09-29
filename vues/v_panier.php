@@ -9,8 +9,9 @@ foreach( $lesProduitsDuPanier as $unProduit)
 	$description = $unProduit['description'];
 	$image = $unProduit['image'];
 	$prix = $unProduit['prix'];
+	$promo = $unProduit['promo'];
 	$qte=$_SESSION['qtes'][$id];
-	$tot=$prix*$qte;
+
 	// affichage
 	?>
 	<TR>
@@ -23,9 +24,10 @@ foreach( $lesProduitsDuPanier as $unProduit)
 	<td><a href="index.php?uc=gererPanier&produit=<?php echo $id ?>&action=diminuerQte">
 	<img src="images/diminuerQte.png" TITLE="Diminuer la quantité" alt="Diminuer la quantité"></a></td>
 	<td>Qté : <?php echo $qte;?></td>
-	<td>Coût : <?php echo $qte*$prix.'€';?></td>
+	<td>Coût : <?php echo $qte*$prix*(1-$promo/100).'€';?></td>
 	</TR>
 	<?php
+	$tot=$tot+$qte*$prix*(1-$promo/100);
 }
 ?>
 <TR><td></td><td></td><td></td><td></td><td></td><td></td><td><?php if ($tot>0) echo'Coût total : '.$tot.'€';?></td></tr>

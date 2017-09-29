@@ -9,9 +9,9 @@ CREATE TABLE IF NOT EXISTS Produit
   description CHAR(50), 
    prix DECIMAL (10,2) NULL  ,
    image CHAR (32) NULL, 
-  
-    idCategorie CHAR (32) NOT NULL 
-   , PRIMARY KEY (id) 
+   idCategorie CHAR (32) NOT NULL, 
+   `promo` FLOAT NOT NULL ,
+   PRIMARY KEY (id) 
  ) 
  ENGINE=InnoDB;
 
