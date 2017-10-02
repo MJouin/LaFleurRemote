@@ -209,4 +209,22 @@ function getErreursSaisieCommande($nom,$pre,$rue,$ville,$cp,$mail)
 	}
 	return $lesErreurs;
 }
+/**
+ * Regarde si l'administrateur est connecté ou non
+ * @return Un booléen true si l'utilisateur est connecté
+*/
+
+function dejaConnecte()
+{
+	if (isset($_SESSION['pseudo']) && isset($_SESSION['mdp'])) {
+		$ok = true;
+	}
+
+	else {
+		$ok = false;
+	}
+
+	return $ok;
+		
+}
 ?>
