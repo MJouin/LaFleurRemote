@@ -1,0 +1,591 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class PdoLafleur</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+        <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                    
+                            	        [ <a href="../classtrees_default.html">Class Tree: default</a> ]
+            [ <a href="../elementindex_default.html">Index: default</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">default</div>
+		<div id="packageTitle">default</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../default/_class.pdoLafleur.inc.php.html">		class.pdoLafleur.inc.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../default/PdoLafleur.html">		PdoLafleur
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: PdoLafleur</h1>
+	<p style="margin: 0px;">Source Location: /class.pdoLafleur.inc.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 17]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Classe d'accès aux données.</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Patrice Grand</li>
+																</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>1.0</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../default/PdoLafleur.html#methodconnexion">connexion</a></li>
+				<li><a href="../default/PdoLafleur.html#methodcreerCommande">creerCommande</a></li>
+				<li><a href="../default/PdoLafleur.html#methodfkPresenceContenir">fkPresenceContenir</a></li>
+				<li><a href="../default/PdoLafleur.html#methodgetLeProduit">getLeProduit</a></li>
+				<li><a href="../default/PdoLafleur.html#methodgetLesCategories">getLesCategories</a></li>
+				<li><a href="../default/PdoLafleur.html#methodgetLesProduitsDeCategorie">getLesProduitsDeCategorie</a></li>
+				<li><a href="../default/PdoLafleur.html#methodgetLesProduitsDuTableau">getLesProduitsDuTableau</a></li>
+				<li><a href="../default/PdoLafleur.html#methodgetPdoLafleur">getPdoLafleur</a></li>
+				<li><a href="../default/PdoLafleur.html#methodimporterNouveauProduit">importerNouveauProduit</a></li>
+				<li><a href="../default/PdoLafleur.html#methodmodifierProduit">modifierProduit</a></li>
+				<li><a href="../default/PdoLafleur.html#methodnouvelId">nouvelId</a></li>
+				<li><a href="../default/PdoLafleur.html#methodsupprimerProduit">supprimerProduit</a></li>
+				<li><a href="../default/PdoLafleur.html#method_destruct">_destruct</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Classe d'accès aux données.
+</strong></p>
+<p>Utilise les services de la classe PDO  pour l'application lafleur  Les attributs sont tous statiques,  les 4 premiers pour la connexion  $monPdo de type PDO  $monPdoGsb qui contiendra l'unique instance de la classe</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Patrice Grand</li>
+	<li><b>version</b> - 1.0</li>
+	<li><b>link</b> - <a href="http://www.php.net/manual/fr/book.pdo.php">http://www.php.net/manual/fr/book.pdo.php</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+	
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodgetPdoLafleur"></a>
+	<p></p>
+	<h3>static getPdoLafleur</h3>
+	<div class="indent">
+		<p>
+		<code>static l'unique getPdoLafleur(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 45]</p>
+		<p align="center"><strong>Fonction statique qui crée l'unique instance de la classe
+</strong></p>
+<p>Appel : $instancePdolafleur = PdoLafleur::getPdoLafleur();</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - objet de la classe PdoLafleur</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<a name="methodconnexion"></a>
+	<p></p>
+	<h3>connexion</h3>
+	<div class="indent">
+		<p>
+		<code>void connexion(
+Le
+$pseudo, Le
+$mdp)</code>
+		</p>
+	
+		<p class="linenumber">[line 150]</p>
+		<p align="center"><strong>Crée une connexion
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">Le</span>
+		<b>$pseudo</b> 
+		- 
+		pseudo de connexion</li>
+			<li>
+		<span class="type">Le</span>
+		<b>$mdp</b> 
+		- 
+		mot de passe de la connexion</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodcreerCommande"></a>
+	<p></p>
+	<h3>creerCommande</h3>
+	<div class="indent">
+		<p>
+		<code>void creerCommande(
+Nom
+$nom, Rue
+$rue, Code
+$cp, Ville
+$ville, Adresse
+$mail, Les
+$lesIdProduit, Les
+$lesQteProduit)</code>
+		</p>
+	
+		<p class="linenumber">[line 119]</p>
+		<p align="center"><strong>Crée une commande
+</strong></p>
+<p>Crée une commande à partir des arguments validés passés en paramètre, l'identifiant est  construit à partir du maximum existant ; crée les lignes de commandes dans la table contenir à partir du  tableau d'idProduit passé en paramètre</p><h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">Nom</span>
+		<b>$nom</b> 
+		- 
+		du client</li>
+			<li>
+		<span class="type">Rue</span>
+		<b>$rue</b> 
+		- 
+		de l'adresse du client</li>
+			<li>
+		<span class="type">Code</span>
+		<b>$cp</b> 
+		- 
+		postal</li>
+			<li>
+		<span class="type">Ville</span>
+		<b>$ville</b> 
+		- 
+		du client</li>
+			<li>
+		<span class="type">Adresse</span>
+		<b>$mail</b> 
+		- 
+		email du client</li>
+			<li>
+		<span class="type">Les</span>
+		<b>$lesIdProduit</b> 
+		- 
+		id des produits</li>
+			<li>
+		<span class="type">Les</span>
+		<b>$lesQteProduit</b> 
+		- 
+		quantités des produits par id</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfkPresenceContenir"></a>
+	<p></p>
+	<h3>fkPresenceContenir</h3>
+	<div class="indent">
+		<p>
+		<code>Un fkPresenceContenir(
+L'id
+$id)</code>
+		</p>
+	
+		<p class="linenumber">[line 186]</p>
+		<p align="center"><strong>Vérifie si un produit n'est pas actuellement en commande
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - booléen true si le produit est actuellement en commande</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$id</b> 
+		- 
+		du produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetLeProduit"></a>
+	<p></p>
+	<h3>getLeProduit</h3>
+	<div class="indent">
+		<p>
+		<code>Un getLeProduit(
+L'id
+$id)</code>
+		</p>
+	
+		<p class="linenumber">[line 222]</p>
+		<p align="center"><strong>Retourne un tableau contenant contenant toutes les infos sur un produit
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - tableau qui contient tout les attributs du produit séléctionné</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$id</b> 
+		- 
+		du produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetLesCategories"></a>
+	<p></p>
+	<h3>getLesCategories</h3>
+	<div class="indent">
+		<p>
+		<code>le getLesCategories(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 59]</p>
+		<p align="center"><strong>Retourne toutes les catégories sous forme d'un tableau associatif
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - tableau associatif des catégories</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetLesProduitsDeCategorie"></a>
+	<p></p>
+	<h3>getLesProduitsDeCategorie</h3>
+	<div class="indent">
+		<p>
+		<code>un getLesProduitsDeCategorie(
+L'id
+$idCategorie)</code>
+		</p>
+	
+		<p class="linenumber">[line 74]</p>
+		<p align="center"><strong>Retourne sous forme d'un tableau associatif tous les produits de la  catégorie passée en argument
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - tableau associatif</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$idCategorie</b> 
+		- 
+		de la catégorie</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetLesProduitsDuTableau"></a>
+	<p></p>
+	<h3>getLesProduitsDuTableau</h3>
+	<div class="indent">
+		<p>
+		<code>Un getLesProduitsDuTableau(
+Tableau
+$desIdProduit)</code>
+		</p>
+	
+		<p class="linenumber">[line 88]</p>
+		<p align="center"><strong>Retourne les produits concernés par le tableau des idProduits passée en argument
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - tableau associatif</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">Tableau</span>
+		<b>$desIdProduit</b> 
+		- 
+		d'idProduits</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodimporterNouveauProduit"></a>
+	<p></p>
+	<h3>importerNouveauProduit</h3>
+	<div class="indent">
+		<p>
+		<code>void importerNouveauProduit(
+L'id
+$id, La
+$description, Le
+$prix, Le
+$image, La
+$categorie)</code>
+		</p>
+	
+		<p class="linenumber">[line 265]</p>
+		<p align="center"><strong>Ajoute un nouveau produit a la base de données
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$id</b> 
+		- 
+		du produit</li>
+			<li>
+		<span class="type">La</span>
+		<b>$description</b> 
+		- 
+		description du produit</li>
+			<li>
+		<span class="type">Le</span>
+		<b>$prix</b> 
+		- 
+		prix du nouveau produit</li>
+			<li>
+		<span class="type">Le</span>
+		<b>$image</b> 
+		- 
+		chemin de l'image uploadé du nouveau produit</li>
+			<li>
+		<span class="type">La</span>
+		<b>$categorie</b> 
+		- 
+		catégorie du nouveau produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodmodifierProduit"></a>
+	<p></p>
+	<h3>modifierProduit</h3>
+	<div class="indent">
+		<p>
+		<code>void modifierProduit(
+L'id
+$id, La
+$description, Le
+$prix)</code>
+		</p>
+	
+		<p class="linenumber">[line 207]</p>
+		<p align="center"><strong>Modifie les informations d'un produit de la base de donnée
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$id</b> 
+		- 
+		du produit</li>
+			<li>
+		<span class="type">La</span>
+		<b>$description</b> 
+		- 
+		nouvelle description du produit</li>
+			<li>
+		<span class="type">Le</span>
+		<b>$prix</b> 
+		- 
+		nouveau prix du produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodnouvelId"></a>
+	<p></p>
+	<h3>nouvelId</h3>
+	<div class="indent">
+		<p>
+		<code>L'id nouvelId(
+La
+$categorie)</code>
+		</p>
+	
+		<p class="linenumber">[line 240]</p>
+		<p align="center"><strong>Génère l'id d'un nouveau produit chargé en fonction de sa catégorie
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - du produit</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">La</span>
+		<b>$categorie</b> 
+		- 
+		catégorie du nouveau produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsupprimerProduit"></a>
+	<p></p>
+	<h3>supprimerProduit</h3>
+	<div class="indent">
+		<p>
+		<code>void supprimerProduit(
+L'id
+$id)</code>
+		</p>
+	
+		<p class="linenumber">[line 170]</p>
+		<p align="center"><strong>Supprime un produit de la base de donnée
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">L'id</span>
+		<b>$id</b> 
+		- 
+		du produit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_destruct"></a>
+	<p></p>
+	<h3>_destruct</h3>
+	<div class="indent">
+		<p>
+		<code>void _destruct(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 35]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Mon, 05 Oct 2015 11:30:15 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	</div>
+</div>
+</body>
+</html>
