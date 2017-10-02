@@ -193,5 +193,23 @@ class PdoLafleur
 		}
 		return $res;
 	}
-}
+
+/**
+ * Crée une connexion 
+ * @param Le pseudo de connexion
+ * @param Le mot de passe de la connexion
+*/
+	public function connexion($pseudo, $mdp)
+	{
+
+		$req = PdoLafleur::$monPdo -> prepare("SELECT nom, mdp FROM administrateur WHERE nom=? AND mdp=?");
+
+		$req->execute(array($_POST['pseudo'],$mdp));
+
+		if($req->fetch())
+		{
+			$_SESSION['pseudo'] = $pseudo;
+		}
+	}
+	}
 ?>

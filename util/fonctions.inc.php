@@ -216,7 +216,7 @@ function getErreursSaisieCommande($nom,$pre,$rue,$ville,$cp,$mail)
 
 function dejaConnecte()
 {
-	if (isset($_SESSION['pseudo']) && isset($_SESSION['mdp'])) {
+	if (isset($_SESSION['pseudo']) ) {
 		$ok = true;
 	}
 
