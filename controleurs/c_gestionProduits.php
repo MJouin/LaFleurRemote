@@ -38,5 +38,21 @@ case 'connexion':
 		break;
 
 	}
+	case 'deconnexion':
+	{
+
+		if (!dejaConnecte()) {
+			include ("vues/v_connexion.php");
+		}
+
+		else {
+
+			session_destroy(); 
+			header('location: index.php');
+		}
+
+		break;
+
+	}
 	}
 ?>
