@@ -4,7 +4,7 @@ require_once("util/fonctions.inc.php");
 require_once("util/class.pdoLafleur.inc.php");
 include("vues/v_entete.php") ;
 include("vues/v_bandeau.php") ;
-
+/* récupération de l'uc avec une uc par défaut */
 if(!isset($_REQUEST['uc']))
      $uc = 'accueil';
 else
